@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,600;0,700;1,600;1,700&family=Lobster&family=Quintessential&family=Young+Serif&display=swap');
+
+/* Reset de estilos y configuración global */
+body {
+  font-family: Josefin sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(imagenes/fondo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Cambia el color de fondo según tu preferencia */
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: rgb(15, 20, 59);
+  color: rgb(200, 136, 187);
+  text-align: initial;
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header-content img {
+  border-radius: 30%;
+  margin-right: 50px;
+  height: 200px;
+}
+  /* Ajusta la altura según tu preferencia */
+
+.header-text {
+  text-align: center;
+  font-size: 15px;
+  font-family: Josefin sans;
+}
+
+/* Estilos de la sección "Sobre Mí" */
+#sobre-mi {
+  padding: 20px 20px;
+  font-family: Josefin sans;
+  font-size: 20px;
+  color: rgb(15, 20, 59);
+}
+
+#sobre-mi>p {
+  text-align: justify;
+}
+
+#sobre-mi>h2 {
+  text-align: center;
+}
+
+/* Estilos de la sección "Proyectos" */
+#proyectos>h2 {
+  text-align: center;
+  font-family: Josefin sans;
+  font-size: 30px;
+  color: rgb(15, 20, 59);
+}
+
+#proyectos>h4 {
+  text-align: center;
+  font-family: Josefin sans;
+  font-size: 20px;
+  color: rgb(15, 20, 59);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Josefin sans;
+  margin: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel_img {
+  width: 100%; /* Utiliza el 100% del ancho del contenedor */
+  height: auto; /* Ajusta la altura automáticamente según el ancho */
+  max-width: 600px; /* Máximo ancho para evitar que la imagen sea demasiado grande */
+  border-radius: 15px; /* Borde redondeado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada alrededor del carrusel */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transición suave en la rotación y la sombra */
+}
+
+/* Efecto en el hover */
+.carousel_img:hover {
+  transform: scale(1.05) rotate(0deg); /* Escala ligeramente y elimina la rotación en el hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada en el hover */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Josefin sans;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: Josefin sans;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .header-content {
+    flex-direction: column; /* Cambia a una columna para dispositivos más pequeños */
+    text-align: center; /* Alineación centrada para dispositivos más pequeños */
+  }
+
+  .header-content img {
+    margin-right: 0; /* Elimina el margen derecho en dispositivos más pequeños */
+    margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+  }
+
+  .mySlides {
+    max-width: 100%; /* Utiliza el 100% del ancho del contenedor en dispositivos más pequeños */
+  }
+
+  .slideshow-container {
+    max-width: 100%; /* Utiliza el 100% del ancho del contenedor en dispositivos más pequeños */
+  }
+  
+  .carousel_img {
+    max-width: 100%; /* Utiliza el 100% del ancho del contenedor en dispositivos más pequeños */
+  }
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Estilos de la sección "Contacto" */
+#contacto {
+  background-color: rgb(15, 20, 59);
+  color: rgb(200, 136, 187);
+  text-align: center;
+  font-family: Josefin sans;
+  padding: 50px 20px;
+  position: relative;
+  font-size: 18px;
+}
+
+#contacto a {
+  color: rgb(200, 136,)
+}

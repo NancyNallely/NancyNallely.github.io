@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mi Portafolio</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="imagenes/nan2.png" alt="Nancy">
+      <div class="header-text">
+        <h1>MI PORTAFOLIO</h1>
+        <h2>Nancy Nallely Martínez Domínguez</h2>
+        <p>Front-End Developer</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <p>Hola, soy Nancy, una desarrolladora frontend apasionada. Me encanta resolver problemas y aprender
+      continuamente. Mi experiencia en Recursos Humanos me enseñó habilidades valiosas, como la resolución de
+      conflictos, el trabajo en equipo y el liderazgo. Me apasiona aplicar la tecnología para ayudar a las
+      personas y mejorar procesos. Puedes conocer más sobre mí descargando mi <a href="imagenes/cv.pdf"
+        target="_blank">CV</a>.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <h4>Puedes seleccionar un proyecto para ir al repositorio en GitHub</h4>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <a class="carousel_link" href="https://github.com/NancyNallely/DEV009-text-analyzer">
+          <img class="carousel_img" src="imagenes/analizer.gif">
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a class="carousel_link" href="https://github.com/NancyNallely/DEV009-data-lovers">
+          <img class="carousel_img" src="imagenes/datalover.gif">
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a class="carousel_link" href="https://github.com/NancyNallely/DEV009-social-network">
+          <img class="carousel_img" src="imagenes/social.gif">
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a class="carousel_link" href="https://github.com/NancyNallely/DEV009-md-links">
+          <img class="carousel_img" src="imagenes/mdlinks.gif">
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a class="carousel_link" href="https://github.com/NancyNallely/DEV009-movie-challenge-fw-new">
+          <img class="carousel_img" src="imagenes/movie.gif">
+        </a>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Conéctate conmigo en <a href="https://github.com/NancyNallely" target="_blank">GitHub</a> y <a
+        href="https://www.linkedin.com/in/nnallely/" target="_blank">LinkedIn</a>!</p>
+    <p>Contacto: <a href="nancymartinezdominguez11@gmail.com">nancymartinezdominguez11@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 | Desarrollado por Nancy Martínez</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
